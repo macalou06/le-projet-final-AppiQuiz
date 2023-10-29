@@ -10,6 +10,8 @@ const temp_ligne = document.querySelector("header .temp_ligne");
 const temptext = document.querySelector(".temps .temp_gauche_text");
 const timeCount = document.querySelector(".temps .temp_secondes");
 
+const commentaire_texte = document.querySelector(".commentaire_texte");
+
 // Le bouton onclick pour ouvrir les règles de jeu
 demarre_btn.onclick = () => {
     info_boite.classList.add("activeinfo"); // accède aux infos
@@ -123,12 +125,14 @@ function optionSelected(reponse) {
         userScore += 1;
         reponse.classList.add("correct");
         reponse.insertAdjacentHTML("beforeend", tickIconTag);
+        commentaire_texte.textContent = "Bravo, vous avez trouvé la bonne réponse !";
         console.log("Réponse Correcte");
         console.log("Votre score actuel = " + userScore);
     } else {
         reponse.classList.add("incorrect");
         reponse.insertAdjacentHTML("beforeend", crossIconTag);
         console.log("Mauvaise réponse");
+        commentaire_texte.textContent = "Désolé, votre réponse est incorrecte. La bonne réponse était : " + correctAns;
 
         for (let i = 0; i < allOptions; i++) {
             if (liste_option.children[i].textContent === correctAns) {
@@ -211,3 +215,15 @@ function queCounter(index) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+  
+  

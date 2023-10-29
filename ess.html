@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="montre">
+        <div id="tempile">00:00:00</div>
+    </div>
+    <button id="stopChrono">Arrêter le chrono</button>
+    
+
+
+
+
+
+    <script>
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let secondes = 0;
+    let minutes = 0;
+    let heures = 0;
+    let intervalId = null; // Pour stocker l'ID de l'intervalle
+
+    const tempile = document.getElementById("tempile");
+    const stopChronoBtn = document.getElementById("stopChrono");
+
+    function startChrono() {
+        secondes++;
+
+        if (secondes == 60) {
+            secondes = 0;
+            minutes++;
+        }
+
+        if (minutes == 60) {
+            minutes = 0;
+            heures++;
+        }
+
+        const formattedTime = formatTime(heures) + ":" + formatTime(minutes) + ":" + formatTime(secondes);
+        tempile.textContent = formattedTime;
+    }
+
+    function formatTime(time) {
+        return time < 10 ? "0" + time : time;
+    }
+
+    // Démarrer le chronomètre toutes les 1000ms (1 seconde)
+    intervalId = setInterval(startChrono, 1000);
+
+    // Gestionnaire d'événement pour le bouton d'arrêt
+    stopChronoBtn.addEventListener("click", () => {
+        clearInterval(intervalId); // Arrête l'intervalle de mise à jour du chronomètre
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -19,6 +19,7 @@ let questions = [
         num: 1,
         question: "Que signifie HTML ?",
         reponse: "Hyper Text Markup Language",
+        commentaire: "C'est exacte!Hyper Text Markup Language est la bonne reponse",
         option: [
             "Hyper Text for Eat",
             "Hyper Text but to understand",
@@ -31,6 +32,8 @@ let questions = [
         num: 2,
         question: "Que signifie le DOM en JavaScript?",
         reponse: "Document Object Model",
+        commentaire: "C'est exacte!Document Object Model est la bonne reponse",
+
         option: [
             "Document Object Model",
             "cpgt Text but to understand",
@@ -43,6 +46,8 @@ let questions = [
         num: 3,
         question: "Que signifie CSS ?",
         reponse: "Cascading Style Sheets ou feuille de style en cascade ",
+        commentaire: "C'est exacte!Cascading Style Sheets ou feuille de style en cascade est la bonne reponse",
+
         option: [
             "Feuille Text dans la case",
             "Feuilles de style en cascode",
@@ -55,6 +60,8 @@ let questions = [
         num: 4,
         question: "Pourquoi y a-t-il de l'injustice dans le monde ?",
         reponse: "Personne ne croient en Dieu et le jour de l'interrogation",
+        commentaire: "C'est exacte!Personne ne croient en Dieu et le jour de l'interrogation est la bonne reponse",
+
         option: [
             " La corruption",
             "Personne ne croient en Dieu et le jour de l'interrogation",
@@ -67,6 +74,7 @@ let questions = [
         num: 5,
         question: "C'est quoi la croyance en Allah ?",
         reponse: "Montrer son unicité sans l'associer",
+        commentaire: "C'est exacte!Montrer son unicité sans l'associer est la bonne reponse",
         option: [
             "Manger boire et dormir",
             "Montrer son unicité sans l'associer",
@@ -79,6 +87,7 @@ let questions = [
         num: 6,
         question: "Pourquoi les éléves sont nuls en Maths ?",
         reponse: "Pas d'amour en la matière et manque d'effort",
+        commentaire: "C'est exacte!Pas d'amour en la matière et manque d'effort est la bonne reponse",
         option: [
             "Complexité de la matière",
             "La paresse des élèves",
@@ -89,3 +98,4 @@ let questions = [
 
 
 ]
+

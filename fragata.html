@@ -46,12 +46,13 @@
                                     </div>
 
                                     <!-- Boite à outils questions -->
+                                    const message = percentage >= 50 ? "Félicitations!" : "Encouragements!";
 
                                     <div class="quest_boite">
                                         <header>
                                             <div class="titre">Application qcm</div>
                                             <div class="temps">
-                                                <div class="temp_gauch_text">Temps Gauche</div>
+                                                <div class="temp_gauch_text">Temps RESTANT</div>
                                                 <div class="temp_secondes">15</div>
                                             </div>
                                             <div class="temp_ligne"></div>
@@ -65,6 +66,12 @@
                                                 <!-- Ici j'ai inseré l'option de javascript -->
 
                                             </div>
+
+
+                                            <div class="commentaire_texte"></div> 
+
+
+
                                         </section>
                                         <!-- pied du boite question -->
 
@@ -99,5 +106,6 @@
 
     <script src="yeram.js"></script>
     <script src="macalou.js"></script>
+    <!-- <script src="widow.js"></script> -->
 </body>
 </html>
